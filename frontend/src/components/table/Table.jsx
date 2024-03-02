@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TableHead from './TableHead'
 import TableBody from './TableBody'
 
@@ -591,10 +591,11 @@ const Packages = [
 ]
 
 const Table = () => {
+  const [tick,setTick]=useState(false);
   return (
     <div className='w-full h-full my-6 border-2'>
-        <TableHead />
-        <TableBody Packages={Packages}/>
+        <TableHead setTick={setTick}/>
+        <TableBody Packages={Packages} Prev={tick} />
     </div>
   )
 }
