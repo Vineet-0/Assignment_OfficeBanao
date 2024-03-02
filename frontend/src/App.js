@@ -1,9 +1,11 @@
+import Header from './components/Header.jsx'
+import BodyContent from './components/BodyContent.jsx'
+
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline w-full min-h-screen flex items-center justify-center">
-        Hello world!
-      </h1>
+    <div className="flex-col w-full min-h-screen custom-scrollbar">
+      <Header />
+      <BodyContent className="flex-grow" />
     </div>
   );
 }
