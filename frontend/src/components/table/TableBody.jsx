@@ -2,10 +2,12 @@ import React from 'react'
 import Package from './Package';
 
 
-const TableBody = ({key,Packages}) => {
+const TableBody = ({Packages}) => {
     return (
-        <div key={key} className='w-full flex-col gap-4 border-t-2'>
-            <Package Packages={Packages}/>
+        <div className='h-full'>
+          {Packages.map((P, index) => (
+              <Package key={index} Package={P}/>
+          ))}
         </div>
     )
 }

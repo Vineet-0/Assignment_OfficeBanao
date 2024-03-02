@@ -594,11 +594,7 @@ const Table = () => {
   return (
     <div className='w-full h-full my-6 border-2'>
         <TableHead />
-        <div className='h-full'>
-          {Packages.map((p, index) => (
-              <TableBody key={index} Packages={p}/>
-          ))}
-        </div>
+        <TableBody Packages={Packages}/>
     </div>
   )
 }
