@@ -14,7 +14,7 @@ function App() {
       </div>
       {
         active && (
-          <Save active={active} setActive={setActive}/>
+          <Save setActive={setActive}/>
         )
       }
     </div>

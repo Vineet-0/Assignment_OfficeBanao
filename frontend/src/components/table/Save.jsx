@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ImCross } from "react-icons/im";
 
-const Save = ({active,setActive}) => {
+const Save = ({setActive}) => {
   const [formValues, setFormValues] = useState({
     client: '',
     dateOfCommencement: '',
